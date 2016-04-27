@@ -1,0 +1,11 @@
+{
+  "name": "testingplayground",
+  "version": "1.0.0",
+  "description": "a place to play with tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Mikhail Shnayder",
+  "license": "ISC"
+}
