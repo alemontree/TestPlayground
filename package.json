@@ -4,8 +4,22 @@
   "description": "a place to play with tests",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha ./test/indexSpec.js && mocha test --require blanket --reporter html-cov > coverage.html"
   },
   "author": "Mikhail Shnayder",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "blanket": "^1.1.9",
+    "chai": "^3.5.0",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "index.js"
+      ],
+      "data-cover-never": "node_modules"
+    }
+  }
 }
